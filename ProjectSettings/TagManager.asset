@@ -8,6 +8,7 @@ TagManager:
   - enemigoUno
   - Moneda
   - Corazon
+  - Win
   layers:
   - Default
   - TransparentFX

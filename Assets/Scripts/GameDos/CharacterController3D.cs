@@ -26,6 +26,13 @@ public class CharacterController3D : MonoBehaviour
     {
         rb.linearVelocity = new Vector3(Movement.x * Speed, rb.linearVelocity.y, Movement.z*Speed); 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Win"))
+        {
+            GameManager.Instance.CheckWin();
+        }
+    }
     public void OnMovement(InputAction.CallbackContext context)
     {
         Debug.Log("MOVIMIENTO");
