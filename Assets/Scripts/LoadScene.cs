@@ -3,10 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    public void PlayGame()
+    public void Scenes(string scene)
     {
-        SceneManager.LoadScene("PlayGame");
+        SceneManager.LoadScene(scene);
     }
+
     public void ExitGame()
     {
         Application.Quit();
