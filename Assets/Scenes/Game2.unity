@@ -946,6 +946,7 @@ GameObject:
   - component: {fileID: 393424915}
   - component: {fileID: 393424914}
   - component: {fileID: 393424913}
+  - component: {fileID: 393424917}
   m_Layer: 0
   m_Name: enemigo 2
   m_TagString: enemigoDos
@@ -1042,6 +1043,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &393424917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393424912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7ef730380ee1642a9332f634e3f2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: 75a66b753e5bfba469aad0903034bcbe, type: 2}
+  material: {fileID: 2100000, guid: 13730fefa606bab4a8d7b2ce33b773f2, type: 2}
 --- !u!1 &632083152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2207,7 @@ GameObject:
   - component: {fileID: 1908930632}
   - component: {fileID: 1908930631}
   - component: {fileID: 1908930630}
+  - component: {fileID: 1908930634}
   m_Layer: 0
   m_Name: enemigo 1
   m_TagString: enemigoUno
@@ -2288,6 +2304,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908930634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908930629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7ef730380ee1642a9332f634e3f2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: 2a946b072ae602a40b0da1343d653c41, type: 2}
+  material: {fileID: 2100000, guid: aaa324cad391db6488f391efeaf4da76, type: 2}
 --- !u!1 &1939274397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,6 +3013,7 @@ GameObject:
   - component: {fileID: 2130756940}
   - component: {fileID: 2130756936}
   - component: {fileID: 2130756941}
+  - component: {fileID: 2130756942}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3122,6 +3153,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2130756942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130756935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7ef730380ee1642a9332f634e3f2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: c2f9f9d649dafe94297a6104789cea47, type: 2}
+  material: {fileID: 2100000, guid: 07cf30107aec4d64ca4241a59ccea0a6, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
