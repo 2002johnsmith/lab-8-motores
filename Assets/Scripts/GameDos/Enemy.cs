@@ -10,10 +10,16 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            OnEnter?.Invoke(enemyColor, damage);
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            OnExit?.Invoke();
+        }
     }
 }

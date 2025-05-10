@@ -5,6 +5,11 @@ using UnityEngine.UI;
 public class CoinPanel : MonoBehaviour
 {
     [SerializeField] private TMP_Text coins;
+    private void Start()
+    {
+        coins.text = GameManager.Instance.PlayerCoins.ToString();   
+
+    }
     private void OnEnable()
     {
         GameManager.OnCoinUpdate += OnCoinUpdate;

@@ -7,24 +7,20 @@ public class CharacterController3D : MonoBehaviour
     Rigidbody rb;
     [SerializeField] private float Speed;
     [SerializeField] private float JumpForce;
+    private bool canJump=false;
     private Vector3 Movement; 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector3(Movement.x * Speed, rb.linearVelocity.y, Movement.z*Speed); 
+        if (canJump==true )
+        {
+            ApplyPhysics();
+            canJump = false;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -41,10 +37,11 @@ public class CharacterController3D : MonoBehaviour
     }
     public void OnJump()
     {
-
+        canJump = true;
     }
     public void ApplyPhysics()
     {
-
+        rb.AddForce(new Vector3(0, JumpForce, 0), ForceMode.Impulse);
+        
     }
 }

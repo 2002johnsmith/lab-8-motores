@@ -4,7 +4,6 @@ using UnityEngine;
 public class LifePanel : MonoBehaviour
 {
     [SerializeField] private TMP_Text life;
-
     private void OnEnable()
     {
         GameManager.OnLifeUpdate += OnLifeUpdate;
@@ -13,6 +12,11 @@ public class LifePanel : MonoBehaviour
     {
         GameManager.OnLifeUpdate -= OnLifeUpdate;
     }
+    private void Start()
+    {
+        life.text=GameManager.Instance.PlayerLife.ToString();
+    }
+
     public void OnLifeUpdate(int Life)
     {
         life.text=Life.ToString();

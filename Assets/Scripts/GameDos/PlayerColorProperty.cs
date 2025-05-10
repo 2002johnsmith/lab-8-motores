@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class PlayerColorProperty : MonoBehaviour
+public class PlayerColorProperty : ColorProperty
 {
     private void OnEnable()
     {
-        
+        ColorPowerUpManager.OnChangeColor += SetUpColor;
     }
     private void OnDisable()
     {
-        
+        ColorPowerUpManager.OnChangeColor -= SetUpColor;
     }
 }
