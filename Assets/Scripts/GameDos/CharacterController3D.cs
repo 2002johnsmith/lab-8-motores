@@ -31,7 +31,6 @@ public class CharacterController3D : MonoBehaviour
     }
     public void OnMovement(InputAction.CallbackContext context)
     {
-        Debug.Log("MOVIMIENTO");
         Vector2 Direction=context.ReadValue<Vector2>();
         Movement = new Vector3(Direction.x, 0, Direction.y);
     }
